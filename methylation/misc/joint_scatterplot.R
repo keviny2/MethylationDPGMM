@@ -9,7 +9,7 @@ library(BBmisc)
 library(ggplot2)
 
 # get rna data
-rna <- read_csv('exp_seq.csv')
+rna <- read_csv('exp_array.csv')
 rna.id <- read_csv('icgc_donor_id.csv')
 rna.genes <- read_csv('gene_id.csv')
 colnames(rna) <- rna.genes$gene_id
@@ -50,13 +50,15 @@ meth.rna.df <- data.frame(methylation_value = meth.vec,
 
 # plot
 plotted<-ggplot(meth.rna.df,aes(x=methylation_value,y=expression_value))+
-  xlab('methylation value') +
-  ylab('RNA expression value') +
-  ggtitle('DNA methylation + RNA expression') +
+  xlab('DNA methylation') +
+  ylab('RNA-array') +
+  ggtitle('DNA methylation + RNA-array') +
   geom_point()
 plotted
 
 
+res <- donor[which(donor$icgc_donor_id %in% rows.use),]$primary_site
+data.frame(x=res) %>% group_by(x) %>% count()
 #df <- meth.final
 #df2 <- rna.final
 #

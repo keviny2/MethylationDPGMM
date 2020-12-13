@@ -20,7 +20,7 @@ if __name__ == '__main__':
                                                                                                         num_tissues=tissue_locations.shape[0],
                                                                                                         num_patients=50,
                                                                                                         num_genes=500,
-                                                                                                        gene_selection_type='pca',
+                                                                                                        gene_selection_type='nano_string',
                                                                                                         scale=1,
                                                                                                         random_seed=123,
                                                                                                         log_normalize_type='log_normalize_across_patient',
