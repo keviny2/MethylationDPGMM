@@ -1,7 +1,7 @@
 # MethylationDPGMM
-##Multi-modal Pan-Cancer Stratification Using DNA Methylation Data
-####*Kevin Yang*
-###Abstract
+## Multi-modal Pan-Cancer Stratification Using DNA Methylation Data
+#### *Kevin Yang*
+### Abstract
 **Motivation**: DNA methylation is an epigenetic mark that is suspected to have regulatory roles in a broad
 range of biological processes and diseases. There is evidence that DNA methylation levels are associated
 with transcriptional repression which may be closely related to cancer. Technology is now available to
