@@ -1,4 +1,7 @@
 # MethylationDPGMM
+
+See R package [methylationfun](https://github.com/keviny2/methylationfun) for functions to process DNA methylation data obtained from ICGC.
+
 ## Multi-modal Pan-Cancer Stratification Using DNA Methylation Data
 #### *Kevin Yang*
 ### Abstract
